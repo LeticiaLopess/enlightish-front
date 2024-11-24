@@ -44,7 +44,7 @@ export function TopbarMobile() {
                     />
                     <a onClick={toggleMenu} className='cursor-pointer'>
                         <svg width="19" height="19" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 54.1667L54.1667 7M54.1667 54.1667L30.5833 30.5833L7 7" stroke="#EF2D55" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7 54.1667L54.1667 7M54.1667 54.1667L30.5833 30.5833L7 7" stroke="#EF2D55" strokeWidth="7" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
                 </div>
