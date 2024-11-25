@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { Button } from '../Button';
+'use client'
 import { TopbarDesktop } from './subcomponents/TopbarDesktop';
 import { TopbarMobile } from './subcomponents/TopbarMobile';
 

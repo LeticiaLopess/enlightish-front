@@ -19,7 +19,7 @@ export function ButtonDefault({ children, icon, iconPosition = 'left', iconVaria
     return (
         <button
             onClick={onClick}
-            className={`w-fit py-2 lg:py-1.5 px-3 rounded-lg text-sm flex justify-center items-center gap-2 text-white bg-crayola-500 hover:bg-crayola-500/95 hover:shadow-sm ${className}`}
+            className={`w-fit py-2 px-5 rounded-lg flex justify-center items-center gap-2 text-white bg-crayola-500 hover:bg-crayola-500/95 hover:shadow-sm ${className}`}
         >
             {icon && iconPosition === 'left' && renderIcon()}
             {children}

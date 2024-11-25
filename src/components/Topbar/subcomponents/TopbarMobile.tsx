@@ -22,12 +22,15 @@ export function TopbarMobile() {
     return (
         <div>
             <div className="h-24 flex items-center justify-between">
-                <Image
-                    src="/assets/logo-horizontal.svg"
-                    alt="Logo Enlightish"
-                    width={110}
-                    height={100}
-                />
+                <button>
+                    <Image
+                        src="/assets/logo-horizontal.svg"
+                        alt="Logo Enlightish"
+                        width={110}
+                        height={100}
+                    />
+                </button>
+
                 <button onClick={toggleMenu}>
                     <Icon name='HambergerMenu' size={24} />
                 </button>
@@ -44,7 +47,7 @@ export function TopbarMobile() {
                     />
                     <a onClick={toggleMenu} className='cursor-pointer'>
                         <svg width="19" height="19" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 54.1667L54.1667 7M54.1667 54.1667L30.5833 30.5833L7 7" stroke="#EF2D55" strokeWidth="7" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7 54.1667L54.1667 7M54.1667 54.1667L30.5833 30.5833L7 7" stroke="#EF2D55" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </a>
                 </div>
@@ -52,7 +55,7 @@ export function TopbarMobile() {
                 <div className='flex flex-col justify-between h-[calc(100%-135px)]'>
                     <div className="flex flex-col gap-7 pt-4">
                         <MenuButton title='Início' />
-                        <MenuButton title='Sobre Nós' />
+                        <MenuButton title='Sobre' />
                         <MenuButton title='Serviços' />
                         <MenuButton title='Feedback' />
                         <MenuButton title='Contato' />
