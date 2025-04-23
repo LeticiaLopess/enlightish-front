@@ -5,7 +5,7 @@ import { TopbarMobile } from './subcomponents/TopbarMobile';
 export function Topbar() {
     return (
         <>
-            <header className="mx-6 md:mx-12 lg:mx-28">
+            <header className="bg-white px-6 md:px-12 lg:px-56 fixed lg:relative w-full">
                 <div className='lg:hidden'>
                     <TopbarMobile />
                 </div>

@@ -1,4 +1,4 @@
-interface ButtonSecondaryProps {
+export interface ButtonSecondaryProps {
     children: React.ReactNode;
     variant?: 'day' | 'night';
     icon?: string;

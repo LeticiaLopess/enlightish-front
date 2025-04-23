@@ -1,4 +1,4 @@
-interface ButtonDefaultProps {
+export interface ButtonDefaultProps {
     children: React.ReactNode;
     icon?: string;
     iconPosition?: 'right' | 'left';

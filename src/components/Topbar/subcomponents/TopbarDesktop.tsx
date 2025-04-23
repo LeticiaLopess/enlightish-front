@@ -14,12 +14,12 @@ export function TopbarDesktop() {
             </button>
 
             <div className='flex gap-6'>
-                <Button.Link>Início</Button.Link>
-                <Button.Link>Sobre</Button.Link>
-                <Button.Link>Serviços</Button.Link>
-                <Button.Link>Feedback</Button.Link>
-                <Button.Link>Contato</Button.Link>
-                <Button.Outlined className='text-sm'>Quero Começar</Button.Outlined>
+                <Button.Link to="#intro">Início</Button.Link>
+                <Button.Link to="#about">Sobre</Button.Link>
+                <Button.Link to="#services">Serviços</Button.Link>
+                <Button.Link to="#feedback">Feedback</Button.Link>
+                <Button.Link to="#contact">Contato</Button.Link>
+                <Button.Outlined className='text-sm'>Quero começar</Button.Outlined>
             </div>
         </div>
     )

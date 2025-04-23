@@ -1,7 +1,8 @@
+import { ButtonLinkProps } from "../types/ButtonLink";
 
 export function ButtonLink({ children, to, className, onClick }: ButtonLinkProps) {
     return (
-        <a href={to} onClick={onClick} className={`text-night-500 cursor-pointer w-fit flex justify-center items-center hover:underline hover:text-crayola-500 ${className}`}>
+        <a href={to} onClick={onClick} className={`text-night cursor-pointer w-fit flex justify-center items-center hover:underline hover:text-crayola ${className}`}>
             {children}
         </a>
     )

@@ -7,16 +7,17 @@ export function TopbarMobile() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
+    const closeMenu = () => setMenuOpen(false);
 
-    // Specific Components
-    const MenuButton = ({ title, onClick }: { title: string; onClick?: () => void }) => (
-        <button
-            onClick={onClick}
-            className="flex items-center justify-between"
+    const MenuButton = ({ title, href }: { title: string; href: string }) => (
+        <a
+            href={href}
+            onClick={closeMenu}
+            className="flex items-center justify-between cursor-pointer"
         >
             <p>{title}</p>
             <Icon name='ArrowRight2' size={18} />
-        </button>
+        </a>
     );
 
     return (
@@ -54,14 +55,14 @@ export function TopbarMobile() {
 
                 <div className='flex flex-col justify-between h-[calc(100%-135px)]'>
                     <div className="flex flex-col gap-7 pt-4">
-                        <MenuButton title='Início' />
-                        <MenuButton title='Sobre' />
-                        <MenuButton title='Serviços' />
-                        <MenuButton title='Feedback' />
-                        <MenuButton title='Contato' />
+                        <MenuButton href="#intro" title='Início' />
+                        <MenuButton href="#about" title='Sobre' />
+                        <MenuButton href="#services" title='Serviços' />
+                        <MenuButton href="#feedback" title='Feedback' />
+                        <MenuButton href="#contact" title='Contato' />
                     </div>
 
-                    <Button.Outlined className='w-full'>Quero Começar</Button.Outlined>
+                    <Button.Outlined className='w-full'>Quero começar</Button.Outlined>
                 </div>
             </div>
         </div>

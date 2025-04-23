@@ -1,4 +1,4 @@
-interface ButtonLinkProps {
+export interface ButtonLinkProps {
     children: React.ReactNode;
     className?: string;
     to?: string;

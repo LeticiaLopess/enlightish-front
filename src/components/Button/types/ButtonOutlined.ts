@@ -1,4 +1,4 @@
-interface ButtonOutlinedProps {
+export interface ButtonOutlinedProps {
     children: React.ReactNode;
     icon?: string;
     iconPosition?: 'right' | 'left';

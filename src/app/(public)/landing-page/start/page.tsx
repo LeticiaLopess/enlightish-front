@@ -2,39 +2,25 @@ import Button from "@/components/Button";
 
 export function Start() {
     return (
-        <div className="px-6 md:px-12 lg:px-28 pt-16 pb-24 flex flex-col lg:flex-row items-center justify-between">
+        <div id="start" className="overflow-x-hidden px-6 md:px-12 lg:px-40 lg:gap-20 pt-8 lg:pt-20 pb-20 lg:pb-32 flex flex-col lg:flex-row items-center justify-between">
 
-            <section className="w-full">
-                <img
-                    src="/illustrations/welcome-text.svg"
-                    alt="Welcome"
-                    className="w-full lg:w-[90%]"
-                />
-
-                <p className="flex lg:hidden text-sm mt-12 text-night-200">
-                    Aprender inglês transforma não apenas suas habilidades linguísticas, mas também seu futuro, conectando você a culturas e experiências no mundo todo.
+            <section className="w-full mt-20 lg:mt-0">
+                <p className="text-3xl lg:text-[54px] leading-[1.1] font-semibold text-night">
+                    Tenha uma experiência enriquecedora enquanto aprende <span className="text-crayola">inglês</span>
                 </p>
 
-                <p className="hidden lg:flex text-sm mt-12 text-night-200">
-                    Aprender inglês transforma não apenas suas habilidades linguísticas, mas também <br /> seu futuro, conectando você a culturas e experiências no mundo todo.
+                <p className="text-md lg:text-xl mt-6 text-night-200">
+                    A única escola de idiomas com ensino de inglês cristão e missionário no Brasil!
                 </p>
 
-                <Button className="mt-7">Matricule-se</Button>
+                <Button className="w-full mt-10 mb-16 lg:mb-0 text-lg py-2.5 lg:text-xl lg:w-fit lg:!px-12 lg:!py-3">Quero começar agora!</Button>
             </section>
 
-            <section className="flex justify-end mt-20 lg:mt-0 w-full">
-                <img
-                    src="/assets/welcome-people.svg"
-                    alt="Welcome"
-                    className="hidden lg:flex lg:w-[50%]"
-                />
-                <img
-                    src="/assets/welcome-people-mobile.svg"
-                    alt="Welcome"
-                    className="w-[100%] lg:hidden"
-                />
-            </section>
-
+            <img
+                src="/assets/introduction-girl.png"
+                alt="Welcome"
+                className="w-[100%] lg:w-[50%] lg:min-w-[430px]"
+            />
         </div>
     )
 }
