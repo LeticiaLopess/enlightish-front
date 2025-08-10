@@ -4,10 +4,9 @@ import { SectionHeading } from '@/components/SectionHeading';
 
 export function Contact() {
     return (
-        <div id="contact" className="relative bg-white">
-            <div className="absolute inset-y-0 right-0 w-[calc(50%-300px)] bg-night-700 hidden lg:block"></div>
+        <div id="contact" className="relative bg-white px-6 md:px-12 lg:px-40">
             <div className="relative flex flex-col lg:flex-row items-start w-full max-w-[1350px] m-auto">
-                <section className="w-full lg:w-2/3 pt-24 z-10 px-6 md:px-12 lg:px-40">
+                <section className="w-full lg:w-2/3 pt-24 z-10 lg:pr-24">
                     <SectionHeading title="Fale conosco" />
 
                     <p className="text-2xl lg:text-3xl font-semibold mt-8 text-night-600 mb-4">
@@ -30,7 +29,7 @@ export function Contact() {
                         className="w-full md:w-[600px] lg:w-[680px] brightness-200 lg:brightness-100"
                     />
                 </section>
-                <section className="lg:absolute lg:right-0 bg-night-700 h-full w-full lg:w-1/3 pt-24 px-6 md:px-12 pb-48 z-10">
+                <section className="lg:absolute lg:right-0 lg:self-center bg-night-700 w-full lg:w-1/3 my-10 py-12 px-6 md:px-12 z-10 rounded-2xl">
                     <p className="text-2xl font-semibold text-crayola mb-8">
                         Preencha abaixo
                     </p>
@@ -44,12 +43,11 @@ export function Contact() {
 
                         <span className="text-xs text-start text-neutral-500">
                             Ao clicar no botão abaixo, autorizo o contato por
-                            WhatsApp e telefone. Também concordo em receber
-                            ofertas e dicas por e-mail e SMS.
+                            WhatsApp e telefone.
                         </span>
                     </div>
 
-                    <Button className="mt-10 px-16">Enviar</Button>
+                    <Button className="mt-[3rem] px-16">Enviar</Button>
                 </section>
             </div>
         </div>
