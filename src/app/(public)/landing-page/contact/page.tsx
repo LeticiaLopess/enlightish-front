@@ -16,7 +16,7 @@ export function Contact() {
                     <p className="text-night-300 mb-4 lg:mb-0">
                         <strong>Você pode ir além. </strong>A fluência é a ponte
                         entre onde você <strong>está</strong> e onde
-                        <strong>deseja</strong> estar.
+                        <strong className="pl-1">deseja</strong> estar.
                     </p>
                     <p className="text-night-300">
                         Fale conosco! Nossa equipe está pronta para esclarecer

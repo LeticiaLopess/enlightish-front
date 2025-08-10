@@ -10,7 +10,7 @@ export function Start() {
                 <section className="w-full mt-20 lg:mt-0">
                     <p className="text-3xl lg:text-[54px] leading-[1.1] font-semibold text-night">
                         Tenha uma experiência enriquecedora enquanto aprende
-                        <span className="text-crayola">inglês</span>
+                        <span className="text-crayola pl-3">inglês</span>
                     </p>
 
                     <p className="text-md lg:text-xl mt-6 text-night-200">
