@@ -38,17 +38,14 @@ export function Services() {
                             list={
                                 <ul className="flex flex-col gap-2">
                                     <li className="flex gap-3 text-sm items-center">
-                                        {' '}
                                         <Check /> Vocabulário missionário e
                                         bíblico
                                     </li>
                                     <li className="flex gap-3 text-sm items-center">
-                                        {' '}
                                         <Check /> Prática com alunos de mesmo
                                         propósito
                                     </li>
                                     <li className="flex gap-3 text-sm items-center">
-                                        {' '}
                                         <Check /> Material feito para a
                                         realidade do campo
                                     </li>
@@ -69,16 +66,13 @@ export function Services() {
                             list={
                                 <ul className="flex flex-col gap-2">
                                     <li className="flex gap-3 text-sm items-center">
-                                        {' '}
                                         <Check /> Ganha confiança praticando de
                                         verdade
                                     </li>
                                     <li className="flex gap-3 text-sm items-center">
-                                        {' '}
                                         <Check /> Material feito pro seu nível{' '}
                                     </li>
                                     <li className="flex gap-3 text-sm items-center">
-                                        {' '}
                                         <Check /> Você aprende com a experiência
                                         dos outros
                                     </li>
@@ -99,15 +93,12 @@ export function Services() {
                             list={
                                 <ul className="flex flex-col gap-2">
                                     <li className="flex gap-3 text-sm items-center">
-                                        {' '}
                                         <Check /> Mais autonomia de horário
                                     </li>
                                     <li className="flex gap-3 text-sm items-center">
-                                        {' '}
                                         <Check /> Foco no que importa pra você{' '}
                                     </li>
                                     <li className="flex gap-3 text-sm items-center">
-                                        {' '}
                                         <Check /> Um ritmo diferente de
                                         aprendizado
                                     </li>
