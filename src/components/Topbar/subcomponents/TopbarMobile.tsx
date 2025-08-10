@@ -22,7 +22,7 @@ export function TopbarMobile() {
 
     return (
         <div>
-            <div className="h-24 flex items-center justify-between">
+            <div className="h-16 flex items-center justify-between">
                 <button>
                     <Image
                         src="/assets/logo-horizontal.svg"
@@ -38,11 +38,11 @@ export function TopbarMobile() {
             </div>
 
             <div
-                className={`absolute top-0 left-0 right-0 bg-day-50 px-6 lg:hidden h-full transition-transform duration-500 ${
+                className={`fixed top-0 left-0 right-0 bg-day-50 lg:hidden h-full transition-transform duration-500 z-50 ${
                     menuOpen ? 'translate-x-0' : '-translate-x-full'
                 }`}
             >
-                <div className="flex items-center justify-between h-24">
+                <div className="flex items-center justify-between h-24 px-6">
                     <Image
                         src="/assets/logo-horizontal.svg"
                         alt="Logo Enlightish"
@@ -68,23 +68,26 @@ export function TopbarMobile() {
                     </a>
                 </div>
 
-                <div className="flex flex-col justify-between h-[calc(100%-135px)]">
-                    <div className="flex flex-col gap-7 pt-4">
+                <div className="bg-white flex flex-col justify-between h-[calc(100%-135px)]">
+                    <div className="flex flex-col gap-7 pt-4 pb-8 px-6">
                         <MenuButton href="#intro" title="Início" />
                         <MenuButton href="#about" title="Sobre" />
                         <MenuButton href="#services" title="Serviços" />
                         <MenuButton href="#feedback" title="Feedback" />
                         <MenuButton href="#contact" title="Contato" />
-                    </div>
 
-                    <Button.Outlined
-                        onClick={() =>
-                            window.open('https://wa.me/5521982794750', '_blank')
-                        }
-                        className="w-full"
-                    >
-                        Quero começar
-                    </Button.Outlined>
+                        <Button.Outlined
+                            onClick={() =>
+                                window.open(
+                                    'https://wa.me/5521982794750',
+                                    '_blank'
+                                )
+                            }
+                            className="w-full"
+                        >
+                            Quero começar
+                        </Button.Outlined>
+                    </div>
                 </div>
             </div>
         </div>
