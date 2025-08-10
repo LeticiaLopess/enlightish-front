@@ -9,7 +9,7 @@ export function Topbar() {
                 <div className="lg:hidden">
                     <TopbarMobile />
                 </div>
-                <div className="hidden lg:block">
+                <div className="hidden lg:block w-full max-w-[1350px] m-auto">
                     <TopbarDesktop />
                 </div>
             </header>
