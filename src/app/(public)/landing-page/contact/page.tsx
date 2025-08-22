@@ -1,53 +1,144 @@
+'use client';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
+import { formatPhone, cleanPhone } from '@/utils/formatter';
 import Button from '@/components/Button';
 import { Input } from '@/components/Input';
 import { SectionHeading } from '@/components/SectionHeading';
 
 export function Contact() {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [phone, setPhone] = useState('');
+
+    const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setPhone(formatPhone(e.target.value));
+    };
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const form = e.currentTarget;
+        const data = new FormData(form);
+        const userName = data.get('name') as string;
+        const phoneValue = data.get('phone') as string;
+
+        if (!userName || userName.trim().split(/\s+/).length < 2) {
+            toast.error(
+                'Por favor, insira seu nome completo (nome e sobrenome)'
+            );
+            return;
+        }
+
+        const cleanedPhone = cleanPhone(phoneValue);
+        if (cleanedPhone.length < 10 || cleanedPhone.length > 11) {
+            toast.error('Por favor, insira um número completo com DDD');
+            return;
+        }
+
+        setIsSubmitting(true);
+
+        try {
+            const response = await fetch('https://formspree.io/f/xnnzyjal', {
+                method: 'POST',
+                body: data,
+                headers: { Accept: 'application/json' }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            toast.success(
+                `Pronto, ${
+                    userName.split(' ')[0]
+                }! Recebemos sua mensagem e retornaremos em breve!`
+            );
+            form.reset();
+            setPhone('');
+        } catch (error) {
+            console.error('Erro no envio:', error);
+            toast.error(
+                'Ops! Algo não saiu como planejado... Por favor, tente novamente ou nos chame no WhatsApp através do botão abaixo.'
+            );
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <div id="contact" className="relative bg-white px-6 md:px-12 lg:px-40">
             <div className="relative flex flex-col lg:flex-row items-start w-full max-w-[1350px] m-auto">
                 <section className="w-full lg:w-2/3 pt-24 z-10 lg:pr-24">
                     <SectionHeading title="Fale conosco" />
 
-                    <p className="text-2xl lg:text-3xl font-semibold mt-8 text-night-600 mb-4">
-                        Preparado(a) para conquistar a fluência em inglês que
-                        você sempre sonhou?
+                    <p className="text-2xl lg:text-3xl font-semibold mt-8 text-night-600 mb-4 max-w-[40rem]">
+                        Preparado(a) para transformar seu inglês em
+                        oportunidades reais?
                     </p>
-                    <p className="text-night-300 mb-4 lg:mb-0">
-                        <strong>Você pode ir além. </strong>A fluência é a ponte
-                        entre onde você <strong>está</strong> e onde
-                        <strong className="pl-1">deseja</strong> estar.
+                    <p className="text-night-300 mb-4 lg:mb-0 max-w-[36rem]">
+                        <strong>Sua jornada começa aqui. </strong>O idioma não
+                        deve ser uma barreira, mas sim a ponte para
+                        <strong className="pl-1">
+                            seu futuro
+                        </strong>
+                        .
                     </p>
-                    <p className="text-night-300">
-                        Fale conosco! Nossa equipe está pronta para esclarecer
-                        todas as suas dúvidas!
-                    </p>
+                    {/* <p className="text-night-300">
+                        Nosso time especializado está pronto para criar um plano
+                        personalizado para suas necessidades.
+                    </p> */}
 
                     <img
-                        alt="Europe"
+                        alt="Ilustração de comunicação global"
                         src="/assets/city-illustration.png"
                         className="w-full md:w-[600px] lg:w-[680px] brightness-200 lg:brightness-100"
                     />
                 </section>
+
                 <section className="lg:absolute lg:right-0 lg:self-center bg-night-700 w-full lg:w-1/3 my-10 py-12 px-6 md:px-12 z-10 rounded-2xl">
                     <p className="text-2xl font-semibold text-crayola mb-8">
-                        Preencha abaixo
+                        Vamos começar sua transformação
                     </p>
 
-                    <div className="flex flex-col gap-7">
-                        <Input placeholder="Nome e Sobrenome" mode="light" />
-
-                        <Input placeholder="E-mail" mode="light" />
-
-                        <Input placeholder="DDD + Celular" mode="light" />
+                    <form
+                        onSubmit={handleSubmit}
+                        className="flex flex-col gap-7"
+                    >
+                        <Input
+                            placeholder="Nome completo"
+                            mode="light"
+                            name="name"
+                            required
+                        />
+                        <Input
+                            placeholder="Seu melhor e-mail"
+                            mode="light"
+                            type="email"
+                            name="email"
+                            required
+                        />
+                        <Input
+                            placeholder="WhatsApp"
+                            mode="light"
+                            name="phone"
+                            value={phone}
+                            onChange={handlePhoneChange}
+                            required
+                        />
 
                         <span className="text-xs text-start text-neutral-500">
-                            Ao clicar no botão abaixo, autorizo o contato por
-                            WhatsApp e telefone.
+                            Ao enviar, você concorda em receber informações
+                            sobre nossos serviços.
                         </span>
-                    </div>
 
-                    <Button className="mt-[3rem] px-16">Enviar</Button>
+                        <Button
+                            type="submit"
+                            className="mt-[3rem] px-16"
+                            disabled={isSubmitting}
+                        >
+                            {isSubmitting ? 'Enviando...' : 'Quero ser fluente'}
+                        </Button>
+                    </form>
                 </section>
             </div>
         </div>

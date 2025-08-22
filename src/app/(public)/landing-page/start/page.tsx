@@ -20,7 +20,7 @@ export function Start() {
 
                     <Button
                         onClick={() =>
-                            window.open('https://wa.me/5521982794750', '_blank')
+                            window.open('https://wa.me/5521979168064', '_blank')
                         }
                         className="w-full mt-10 mb-16 lg:mb-0 text-lg py-2.5 lg:text-xl lg:w-fit lg:!px-12 lg:!py-3"
                     >

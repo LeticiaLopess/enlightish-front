@@ -1,15 +1,20 @@
-import { ButtonDefaultProps } from "../types/ButtonDefault";
-import { IconBold } from "./IconBold";
-import { IconOutlined } from "./IconOutline";
+import { ButtonDefaultProps } from '../types/ButtonDefault';
+import { IconBold } from './IconBold';
+import { IconOutlined } from './IconOutline';
 
-export function ButtonDefault({ children, icon, iconPosition = 'left', iconVariant = 'bold', className, onClick }: ButtonDefaultProps) {
-
+export function ButtonDefault({
+    children,
+    icon,
+    iconPosition = 'left',
+    iconVariant = 'bold',
+    className,
+    onClick
+}: ButtonDefaultProps) {
     const renderIcon = () => {
-        if(icon) {
-            if(iconVariant === 'outline') {
+        if (icon) {
+            if (iconVariant === 'outline') {
                 return <IconOutlined name={icon} />;
-
-            } else if(iconVariant === 'bold') {
+            } else if (iconVariant === 'bold') {
                 return <IconBold name={icon} />;
             }
         }
@@ -25,5 +30,5 @@ export function ButtonDefault({ children, icon, iconPosition = 'left', iconVaria
             {children}
             {icon && iconPosition === 'right' && renderIcon()}
         </button>
-    )
+    );
 }

@@ -12,7 +12,7 @@ interface CardProps {
 
 export function Card({ src, title, text, buttonLink, list }: CardProps) {
     return (
-        <div className="flex flex-col justify-between gap-8 items-start bg-day-100 border rounded-xl border-night-400 p-7 lg:p-9 w-full lg:w-[450px]">
+        <div className="flex flex-col justify-between gap-8 items-start bg-day-100 border rounded-xl border-night-400 p-7 lg:p-9 w-full h-full">
             <div className="flex flex-col gap-5 lg:gap-8">
                 <Image src={src} alt="Icon" width={50} height={50} />
 

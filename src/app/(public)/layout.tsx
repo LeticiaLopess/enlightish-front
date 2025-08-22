@@ -2,6 +2,7 @@ import { Topbar } from '@/components/Topbar';
 import { Poppins } from 'next/font/google';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import { Toast } from '@/components/Toast/Index';
 
 config.autoAddCss = false;
 
@@ -15,7 +16,7 @@ export default function RootLayout({
     children
 }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang="en" className={`${poppins.className}`}>
+        <html lang="pt-BR" className={`${poppins.className}`}>
             <head>
                 <title>Enlightish</title>
                 <meta
@@ -32,9 +33,9 @@ export default function RootLayout({
             <body className="overflow-x-hidden">
                 <Topbar />
                 {children}
-
+                <Toast />
                 <a
-                    href="https://wa.me/5521982794750"
+                    href="https://wa.me/5521979168064"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="fixed right-6 bottom-6 lg:right-8 lg:bottom-8 z-50"

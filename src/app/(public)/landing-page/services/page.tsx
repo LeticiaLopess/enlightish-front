@@ -11,30 +11,30 @@ export function Services() {
             <div className="flex flex-col items-start w-full max-w-[1350px] m-auto">
                 <SectionHeading title="Nossos serviços" />
 
-                <div className="w-full max-w-[31rem]">
+                <div className="w-full max-w-[38rem]">
                     <p className="text-2xl lg:text-3xl font-semibold mt-8 text-night-600">
                         É por isso que a Enlightish nasceu: para que o idioma
                         jamais seja um obstáculo entre a sua voz e as pessoas.
                     </p>
 
-                    <p className="text-md lg:text-lg mt-6 text-neutral-600 !leading-6">
+                    <p className="text-md lg:text-lg mt-6 text-neutral-600 !leading-6 max-w-[30rem]">
                         Chega de cursos genéricos. Cada objetivo tem um plano,
                         Encontre o seu aqui.
                     </p>
                 </div>
 
-                <div className="w-full flex justify-center">
-                    <div className="w-full flex flex-col gap-8 lg:flex-row justify-between mt-16">
+                <div className="w-full">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-16">
                         <Card
                             buttonLink={() =>
                                 window.open(
-                                    'https://wa.me/5521982794750',
+                                    'https://wa.me/5521979168064',
                                     '_blank'
                                 )
                             }
                             src="/assets/star.svg"
-                            title="Inglês para Missões/Cristãos"
-                            text="Sua voz é a ferramenta mais poderosa do seu chamado. Este curso foi criado para cristãos que precisam de mais que um idioma: precisam da fluência para levar a Palavra para o mundo."
+                            title="Inglês para Missões/Cristão"
+                            text="Sua voz é a ferramenta mais poderosa do seu chamado. Este curso foi criado para cristãos que precisam de mais que um idioma: precisam da fluência para levar a Palavra de Deus para o mundo."
                             list={
                                 <ul className="flex flex-col gap-2">
                                     <li className="flex gap-3 text-sm items-center">
@@ -56,7 +56,7 @@ export function Services() {
                         <Card
                             buttonLink={() =>
                                 window.open(
-                                    'https://wa.me/5521982794750',
+                                    'https://wa.me/5521979168064',
                                     '_blank'
                                 )
                             }
@@ -83,7 +83,7 @@ export function Services() {
                         <Card
                             buttonLink={() =>
                                 window.open(
-                                    'https://wa.me/5521982794750',
+                                    'https://wa.me/5521979168064',
                                     '_blank'
                                 )
                             }

@@ -21,7 +21,7 @@ export function TopbarDesktop() {
                 <Button.Link to="#contact">Contato</Button.Link>
                 <Button.Outlined
                     onClick={() =>
-                        window.open('https://wa.me/5521982794750', '_blank')
+                        window.open('https://wa.me/5521979168064', '_blank')
                     }
                     className="text-sm"
                 >

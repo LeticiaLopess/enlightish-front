@@ -24,7 +24,7 @@ export function Feedback() {
                 <div className="flex flex-col lg:flex-row gap-8 mt-12 lg:overflow-y-hidden lg:overflow-x-scroll w-full custom-scroll pb-8">
                     <Card
                         src="/assets/student-marcelo.png"
-                        text="A Enlightish me mostrou que o idioma não seria uma barreira pra alcançar outros países. Sem falar que, aqui eu aprendi que não tem obstáculo pra eu falar inglês. Estou aprendendo a superar cada desafio e a confiar no meu potencial. Hoje, o inglês não é mais um desafio, mas sim uma extensão para algo que eu nunca imaginaria aprender."
+                        text="A Enlightish me mostrou que o idioma não seria uma barreira pra alcançar outros países. Sem falar que, aqui eu aprendi que não tem obstáculo pra falar inglês. Estou aprendendo a superar cada desafio e a confiar no meu potencial. Hoje, o inglês não é mais um desafio, mas sim uma extensão para algo que eu nunca imaginaria aprender."
                         name="Marcelo Ferreira"
                         career="Missionário e Estudante"
                     />

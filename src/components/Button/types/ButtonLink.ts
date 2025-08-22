@@ -1,6 +1,8 @@
-export interface ButtonLinkProps {
-    children: React.ReactNode;
+import { AnchorHTMLAttributes, ReactNode } from 'react';
+
+export interface ButtonLinkProps
+    extends AnchorHTMLAttributes<HTMLAnchorElement> {
+    children: ReactNode;
     className?: string;
     to?: string;
-    onClick?: () => void;
 }

@@ -79,7 +79,7 @@ export function TopbarMobile() {
                         <Button.Outlined
                             onClick={() =>
                                 window.open(
-                                    'https://wa.me/5521982794750',
+                                    'https://wa.me/5521979168064',
                                     '_blank'
                                 )
                             }

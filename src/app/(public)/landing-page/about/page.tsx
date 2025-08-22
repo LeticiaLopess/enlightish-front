@@ -31,8 +31,8 @@ export function About() {
                         <ul className="flex flex-col gap-3">
                             <li className="flex gap-3 text-sm md:text-lg">
                                 {' '}
-                                <Check /> Único curso de inglês para cristãos no
-                                Brasil
+                                <Check /> Única escola de inglês para cristãos
+                                no Brasil
                             </li>
                             <li className="flex gap-3 text-sm md:text-lg">
                                 {' '}
@@ -41,8 +41,8 @@ export function About() {
                             </li>
                             <li className="flex gap-3 text-sm md:text-lg">
                                 {' '}
-                                <Check /> Study planners para consolidar seus
-                                aprendizados
+                                <Check /> Study planners para consolidar seu
+                                aprendizado
                             </li>
                             <li className="flex gap-3 text-sm md:text-lg">
                                 {' '}
@@ -51,7 +51,7 @@ export function About() {
                             </li>
                             <li className="flex gap-3 text-sm md:text-lg">
                                 {' '}
-                                <Check /> Aulas extras para praticar com outros
+                                <Check /> Aulas extras livres para praticar com outros
                                 alunos
                             </li>
                         </ul>
