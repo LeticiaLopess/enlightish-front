@@ -10,14 +10,13 @@ export function Intro() {
                 <section className="w-full lg:w-1/2 pt-24">
                     <div className="h-1 bg-crayola w-20 mb-4"></div>
                     <p className="text-3xl lg:text-4xl font-medium lg:!leading-[1.2] text-day-50">
-                        O inglês é mais que uma habilidade, é a chave para novas
-                        oportunidades.
+                        O inglês é mais que uma habilidade: é a chave para alcançar o mundo.
                     </p>
 
                     <p className="text-night-100 mt-6">
                         Imagine falar de Deus em qualquer lugar, ter um trabalho
-                        bacana no exterior, fazer amigos de todo canto e viajar
-                        sem barreiras...
+                        bacana no exterior, conhecer pessoas de todo canto e viajar
+                        sem empecilhos...
                     </p>
 
                     <p className="text-night-100 mt-6 italic">
@@ -41,28 +40,28 @@ export function Intro() {
                     <div className="flex flex-col lg:flex-row justify-end gap-8">
                         <Card
                             src="/assets/icon-talk.svg"
-                            title="Fale sem usar tradutor"
-                            text="Tenha boa compreensão e fale de forma natural, sem travar."
+                            title="Fale com confiança"
+                            text="Use o inglês para evangelizar, compartilhar ideias e transformar vidas."
                         />
 
                         <Card
                             src="/assets/icon-business.svg"
-                            title="Melhores oportunidades"
-                            text="Com o inglês no currículo, você estará sempre à frente no mercado!"
+                            title="Oportunidades sem limites"
+                            text="O inglês conecta você a novas carreiras e propósitos."
                         />
                     </div>
 
                     <div className="flex flex-col lg:flex-row justify-end gap-8 mb-12 lg:mb-0">
                         <Card
                             src="/assets/icon-group.svg"
-                            title="Faça amigos pelo mundo"
-                            text="Conecte-se com pessoas de diferentes culturas no mundo todo."
+                            title="Conecte-se com o mundo"
+                            text="Faça amizades, compartilhe sua fé e una culturas através do inglês."
                         />
 
                         <Card
                             src="/assets/icon-airplane.svg"
-                            title="Viaje com liberdade"
-                            text="Conheça novos lugares com a liberdade de se comunicar sem precisar de tradutores."
+                            title="Alcance novas nações"
+                            text="Viaje sem barreiras e leve sua voz aonde Deus enviar sem precisar de tradutores."
                         />
                     </div>
                 </section>

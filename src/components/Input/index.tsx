@@ -9,7 +9,7 @@ export function Input({ mode = "dark", className = "", ...props }: InputProps) {
   return (
     <input
       {...props}
-        className={`h-12 w-full rounded-md text-sm p-3 bg-transparent border ${borderClass} ${textClass} ${placeholderClass} ${className}`}
+        className={`h-11 w-full rounded-md text-sm p-3 bg-transparent border ${borderClass} ${textClass} ${placeholderClass} ${className}`}
     />
   );
 }

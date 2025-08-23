@@ -30,17 +30,11 @@ export function Feedback() {
                     />
 
                     <Card
-                        src="/assets/student-aline.png"
-                        text="Estou aprendendo inglês na Enlightish e estou amando! Como veterinária, sabia que precisava, mas tinha inseguranças. As aulas são práticas e agora me sinto confiante para conversar com clientes em inglês e ter novas oportunidades na minha carreira!"
-                        name="Aline Vasquez"
-                        career="Médica Veterinária"
-                    />
-
-                    <Card
-                        src="/assets/student-marcelo.png"
-                        text="Estou aprendendo o inglês para missões e sou muito grato por isso. As aulas são legais e o ambiente e as professoras são muito inspiradoras. Fico animado para cada aula e me preparo para viver experiências incríveis em diferentes culturas."
-                        name="Marcelo Ferreira"
-                        career="Missionário e Estudante"
+                        src="/assets/student-gabriella.png"
+                        text="Gostei muito do meu início do curso de inglês! As aulas são dinâmicas, leves e já senti que evolui. 
+                              Viajei com a família do meu namorado e consegui falar com o tio dele que é nativo e saiu muito natural... me surpreendi!"
+                        name="Gabriella Lopes"
+                        career="Analista de Supply Chain"
                     />
 
                     <Card
@@ -49,6 +43,13 @@ export function Feedback() {
                         name="Aline Vasquez"
                         career="Médica Veterinária"
                     />
+
+                    {/* <Card
+                        src="/assets/student-aline.png"
+                        text="Estou aprendendo inglês na Enlightish e estou amando! Como veterinária, sabia que precisava, mas tinha inseguranças. As aulas são práticas e agora me sinto confiante para conversar com clientes em inglês e ter novas oportunidades na minha carreira!"
+                        name="Aline Vasquez"
+                        career="Médica Veterinária"
+                    /> */}
                 </div>
             </div>
         </div>

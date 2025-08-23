@@ -13,7 +13,7 @@ export function Start() {
                         <span className="text-crayola pl-3">inglês</span>
                     </p>
 
-                    <p className="text-md lg:text-xl mt-6 text-night-200">
+                    <p className="text-md lg:text-xl mt-6 text-night-200 max-w-[35rem]">
                         A única escola de idiomas com ensino de inglês cristão e
                         missionário no Brasil!
                     </p>

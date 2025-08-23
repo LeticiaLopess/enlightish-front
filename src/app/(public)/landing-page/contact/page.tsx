@@ -72,12 +72,11 @@ export function Contact() {
                     <SectionHeading title="Fale conosco" />
 
                     <p className="text-2xl lg:text-3xl font-semibold mt-8 text-night-600 mb-4 max-w-[40rem]">
-                        Preparado(a) para transformar seu inglês em
-                        oportunidades reais?
+                        Seu inglês, sua ferramenta para impactar vidas e transformar o mundo.
                     </p>
-                    <p className="text-night-300 mb-4 lg:mb-0 max-w-[36rem]">
-                        <strong>Sua jornada começa aqui. </strong>O idioma não
-                        deve ser uma barreira, mas sim a ponte para
+                    <p className="text-night-300 mb-4 lg:mb-0 max-w-[34rem]">
+                        <strong>Sua missão começa aqui. </strong>O idioma não
+                        deve ser uma barreira, mas a ponte para
                         <strong className="pl-1">
                             seu futuro
                         </strong>
@@ -95,14 +94,14 @@ export function Contact() {
                     />
                 </section>
 
-                <section className="lg:absolute lg:right-0 lg:self-center bg-night-700 w-full lg:w-1/3 my-10 py-12 px-6 md:px-12 z-10 rounded-2xl">
+                <section className="lg:absolute lg:right-0 xl:self-center bg-night-700 w-full lg:w-1/3 my-10 p-9 z-10 rounded-2xl">
                     <p className="text-2xl font-semibold text-crayola mb-8">
-                        Vamos começar sua transformação
+                        Cadastre-se
                     </p>
 
                     <form
                         onSubmit={handleSubmit}
-                        className="flex flex-col gap-7"
+                        className="flex flex-col gap-6"
                     >
                         <Input
                             placeholder="Nome completo"
@@ -126,14 +125,14 @@ export function Contact() {
                             required
                         />
 
-                        <span className="text-xs text-start text-neutral-500">
+                        <span className="text-[11px] text-start text-neutral-500">
                             Ao enviar, você concorda em receber informações
                             sobre nossos serviços.
                         </span>
 
                         <Button
                             type="submit"
-                            className="mt-[3rem] px-16"
+                            className="mt-[2rem] px-16"
                             disabled={isSubmitting}
                         >
                             {isSubmitting ? 'Enviando...' : 'Quero ser fluente'}

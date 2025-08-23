@@ -31,7 +31,7 @@ export function About() {
                         <ul className="flex flex-col gap-3">
                             <li className="flex gap-3 text-sm md:text-lg">
                                 {' '}
-                                <Check /> Única escola de inglês para cristãos
+                                <Check /> Primeira escola de inglês para cristãos
                                 no Brasil
                             </li>
                             <li className="flex gap-3 text-sm md:text-lg">
