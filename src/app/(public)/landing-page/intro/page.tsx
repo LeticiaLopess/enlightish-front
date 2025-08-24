@@ -1,6 +1,6 @@
 import { Card } from './components/Card';
 
-export function Intro() {
+export default function Intro() {
     return (
         <div
             id="intro"

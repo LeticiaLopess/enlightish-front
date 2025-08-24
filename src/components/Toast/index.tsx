@@ -14,7 +14,7 @@ export const Toast = () => {
             pauseOnFocusLoss
             draggable
             pauseOnHover
-            theme="light"
+            theme="colored"
         />
     );
 };

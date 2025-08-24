@@ -1,7 +1,7 @@
 import { SectionHeading } from '@/components/SectionHeading';
 import { Card } from './components/Card';
 
-export function Feedback() {
+export default function Feedback() {
     return (
         <div
             id="feedback"

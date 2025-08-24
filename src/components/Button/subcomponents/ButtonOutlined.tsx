@@ -1,7 +1,6 @@
 import { ButtonOutlinedProps } from "../types/ButtonOutlined";
 import { IconOutlined } from "./IconOutline";
 
-
 export function ButtonOutlined({ children, icon, iconPosition = 'left', className, onClick }: ButtonOutlinedProps) {
 
     return (

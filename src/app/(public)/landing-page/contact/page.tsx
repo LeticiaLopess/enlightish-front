@@ -6,7 +6,7 @@ import Button from '@/components/Button';
 import { Input } from '@/components/Input';
 import { SectionHeading } from '@/components/SectionHeading';
 
-export function Contact() {
+export default function Contact() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [phone, setPhone] = useState('');
 
@@ -38,11 +38,12 @@ export function Contact() {
         setIsSubmitting(true);
 
         try {
-            const response = await fetch('https://formspree.io/f/xnnzyjal', {
-                method: 'POST',
-                body: data,
-                headers: { Accept: 'application/json' }
-            });
+            const response = await fetch(process.env.NEXT_PUBLIC_API_URL as string, {
+                                method: 'POST',
+                                body: data,
+                                headers: { Accept: 'application/json' }
+                            });
+
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -55,6 +56,7 @@ export function Contact() {
             );
             form.reset();
             setPhone('');
+            
         } catch (error) {
             console.error('Erro no envio:', error);
             toast.error(

@@ -2,7 +2,7 @@ import { SectionHeading } from '@/components/SectionHeading';
 import { Card } from './components/Card';
 import { Check } from '@/components/Check';
 
-export function Services() {
+export default function Services() {
     return (
         <section
             id="services"

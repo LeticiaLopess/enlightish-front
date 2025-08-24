@@ -1,3 +1,4 @@
+import { ButtonSecondaryProps } from "../types/ButtonSecondary";
 import { IconBold } from "./IconBold";
 import { IconOutlined } from "./IconOutline";
 

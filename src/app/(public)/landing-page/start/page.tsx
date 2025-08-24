@@ -1,6 +1,6 @@
 import Button from '@/components/Button';
 
-export function Start() {
+export default function Start() {
     return (
         <div
             id="start"

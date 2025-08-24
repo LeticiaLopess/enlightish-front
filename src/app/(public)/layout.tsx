@@ -2,7 +2,7 @@ import { Topbar } from '@/components/Topbar';
 import { Poppins } from 'next/font/google';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import { Toast } from '@/components/Toast/Index';
+import { Toast } from '@/components/Toast';
 
 config.autoAddCss = false;
 

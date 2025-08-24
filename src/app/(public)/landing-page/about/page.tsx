@@ -1,7 +1,7 @@
 import { SectionHeading } from '@/components/SectionHeading';
 import { Check } from '@/components/Check';
 
-export function About() {
+export default function About() {
     return (
         <div id="about" className="px-6 md:px-12 lg:px-40 py-24">
             <div className="flex flex-col lg:flex-row items-start justify-between lg:gap-20 w-full max-w-[1350px] m-auto">
