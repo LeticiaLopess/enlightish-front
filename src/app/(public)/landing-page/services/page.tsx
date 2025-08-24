@@ -1,3 +1,5 @@
+"use client";
+
 import { SectionHeading } from '@/components/SectionHeading';
 import { Card } from './components/Card';
 import { Check } from '@/components/Check';
