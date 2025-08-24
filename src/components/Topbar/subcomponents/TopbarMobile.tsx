@@ -25,14 +25,14 @@ export function TopbarMobile() {
     return (
         <div>
             <div className="h-16 flex items-center justify-between">
-                <button>
+                <a href="#start">
                     <Image
                         src="/assets/logo-horizontal.svg"
                         alt="Logo Enlightish"
                         width={110}
                         height={100}
                     />
-                </button>
+                </a>
 
                 <button onClick={toggleMenu}>
                     <Icon name="HambergerMenu" size={24} />

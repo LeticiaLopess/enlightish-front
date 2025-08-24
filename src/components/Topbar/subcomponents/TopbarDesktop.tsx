@@ -6,14 +6,14 @@ import Image from 'next/image';
 export function TopbarDesktop() {
     return (
         <div className="h-20 flex items-center justify-between">
-            <button>
+            <a href="#start">
                 <Image
                     src="/assets/logo-horizontal.svg"
                     alt="Logo Enlightish"
                     width={120}
                     height={100}
                 />
-            </button>
+            </a>
 
             <div className="flex gap-6">
                 <Button.Link to="#intro">Início</Button.Link>
