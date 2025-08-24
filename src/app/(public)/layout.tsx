@@ -21,7 +21,7 @@ export default function RootLayout({
                 <title>Enlightish</title>
                 <meta
                     name="description"
-                    content="Escola de idiomas com foco no inglês cristão."
+                    content="Escola de idiomas com ensino de inglês cristão para missionários."
                 />
                 <meta
                     name="viewport"
