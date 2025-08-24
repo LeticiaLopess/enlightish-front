@@ -6,7 +6,7 @@ export default function Start() {
     return (
         <div
             id="start"
-            className="overflow-x-hidden px-6 md:px-12 lg:px-40 pt-8 lg:pt-20 pb-20 lg:pb-32"
+            className="overflow-x-hidden px-6 md:px-12 lg:px-40 pt-8 lg:pt-40 pb-20 lg:pb-32"
         >
             <div className="flex flex-col lg:flex-row items-center justify-between lg:gap-20 w-full max-w-[1350px] m-auto">
                 <section className="w-full mt-20 lg:mt-0">
