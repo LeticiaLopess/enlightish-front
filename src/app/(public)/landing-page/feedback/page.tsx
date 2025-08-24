@@ -38,10 +38,10 @@ export function Feedback() {
                     />
 
                     <Card
-                        src="/assets/student-aline.png"
-                        text="Estou aprendendo inglês na Enlightish e estou amando! Como veterinária, sabia que precisava, mas tinha inseguranças. As aulas são práticas e agora me sinto confiante para conversar com clientes em inglês e ter novas oportunidades na minha carreira!"
-                        name="Aline Vasquez"
-                        career="Médica Veterinária"
+                        src="/assets/student-matheus.jpg"
+                        text="A metodologia das aulas é prática e dinâmica, permitindo exercitar bem o speaking, além de ser aberta para tirar dúvidas e corrigir erros que eu costumava cometer."
+                        name="Matheus Cirino"
+                        career="Desenvolvedor de Software"
                     />
 
                     {/* <Card
