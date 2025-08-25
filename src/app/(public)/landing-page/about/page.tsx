@@ -9,10 +9,8 @@ export default function About() {
                     <SectionHeading title="Sobre a escola" />
 
                     <div>
-                        <p className="text-2xl lg:text-3xl font-semibold mt-8 text-night-600">
-                            A <span className="underline">única</span> escola
-                            online que une o ensino de inglês à missão cristã
-                            para transformar sua vida e alcançar outras!
+                        <p className="text-2xl lg:text-3xl font-semibold mt-8 text-night-600 max-w-[36rem]">
+                            Aqui, inglês e propósito caminham juntos: preparamos você para anunciar o amor de Cristo ao mundo.
                         </p>
                         <p className="text-md lg:text-lg mt-6 text-neutral-600 !leading-6">
                             Seu chamado é a nossa paixão. Nós te equipamos com a
@@ -31,8 +29,7 @@ export default function About() {
                         <ul className="flex flex-col gap-3">
                             <li className="flex gap-3 text-sm md:text-lg">
                                 {' '}
-                                <Check /> Primeira escola com inglês para cristãos
-                                no Brasil
+                                <Check /> Referência no ensino de inglês para cristãos
                             </li>
                             <li className="flex gap-3 text-sm md:text-lg">
                                 {' '}

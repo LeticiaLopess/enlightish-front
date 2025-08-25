@@ -35,7 +35,7 @@ export default function Services() {
                             }
                             src="/assets/star.svg"
                             title="Inglês para Missões/Cristãos"
-                            text="Sua voz é a ferramenta mais poderosa do seu chamado. Este curso foi criado para cristãos que precisam de mais que um idioma: precisam da fluência para levar a Palavra de Deus para o mundo."
+                            text="Sua voz é a ferramenta mais poderosa do seu chamado. Este curso foi criado para cristãos que precisam de mais que um idioma: precisam de um diferencial para levar a Palavra de Deus para o mundo."
                             list={
                                 <ul className="flex flex-col gap-1.5">
                                     <li className="flex gap-3 text-[14px] items-center">
