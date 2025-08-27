@@ -44,6 +44,14 @@ export default function Feedback() {
                         career="Desenvolvedor de Software"
                     />
 
+                    <Card
+                        src="/assets/student-andrea.jpg"
+                        text="Fazer o curso foi uma experiência muito positiva. A professora Débora sempre tinha sensibilidade pra perceber onde eu tinha mais dificuldade e buscava jeitos de me ajudar a superar.
+                        Com paciência e dedicação, fui ganhando confiança e percebi uma evolução real no meu inglês. Hoje me sinto mais preparada e motivada pra continuar aprendendo."
+                        name="Andrea Inacia"
+                        career="Fisioterapeuta"
+                    />
+
                     {/* <Card
                         src="/assets/student-aline.png"
                         text="Estou aprendendo inglês na Enlightish e estou amando! Como veterinária, sabia que precisava, mas tinha inseguranças. As aulas são práticas e agora me sinto confiante para conversar com clientes em inglês e ter novas oportunidades na minha carreira!"
