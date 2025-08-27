@@ -10,7 +10,7 @@ export default function Start() {
         >
             <div className="flex flex-col lg:flex-row items-center justify-between lg:gap-20 w-full max-w-[1350px] m-auto">
                 <section className="w-full mt-20 lg:mt-0">
-                    <p className="text-3xl lg:text-[54px] leading-[1.1] font-semibold text-night">
+                    <p className="text-[1.67rem] lg:text-[54px] leading-[1.1] font-semibold text-night">
                         Tenha uma experiência enriquecedora enquanto aprende
                         <span className="text-crayola pl-3">inglês</span>
                     </p>
