@@ -56,6 +56,7 @@ export default function About() {
                 </section>
 
                 <section className="w-full lg:w-1/2 flex justify-end">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src="/assets/about-girls.png"
                         alt="Girls"

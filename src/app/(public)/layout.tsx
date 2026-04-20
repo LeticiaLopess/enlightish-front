@@ -1,6 +1,7 @@
 import { Topbar } from '@/components/Topbar';
 import { Poppins } from 'next/font/google';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import type { Metadata } from 'next';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Toast } from '@/components/Toast';
 
@@ -12,24 +13,42 @@ const poppins = Poppins({
     display: 'swap'
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.enlightish.com.br';
+
+export const metadata: Metadata = {
+    metadataBase: new URL(siteUrl),
+    title: {
+        default: 'Enlightish',
+        template: '%s | Enlightish'
+    },
+    description:
+        'Escola de idiomas com ensino de ingles cristao para missionarios.',
+    alternates: {
+        canonical: '/'
+    },
+    openGraph: {
+        title: 'Enlightish',
+        description:
+            'Escola de idiomas com ensino de ingles cristao para missionarios.',
+        url: siteUrl,
+        siteName: 'Enlightish',
+        locale: 'pt_BR',
+        type: 'website'
+    },
+    robots: {
+        index: true,
+        follow: true
+    },
+    icons: {
+        icon: '/assets/favicon-logo.png'
+    }
+};
+
 export default function RootLayout({
     children
 }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="pt-BR" className={`${poppins.className}`}>
-            <head>
-                <title>Enlightish</title>
-                <meta
-                    name="description"
-                    content="Escola de idiomas com ensino de inglês cristão para missionários."
-                />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                />
-                <link rel="icon" href="/assets/favicon-logo.png" />
-            </head>
-
             <body className="overflow-x-hidden">
                 <Topbar />
                 {children}
@@ -40,6 +59,7 @@ export default function RootLayout({
                     rel="noopener noreferrer"
                     className="fixed right-6 bottom-6 lg:right-8 lg:bottom-8 z-50"
                 >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src="/assets/whatsapp.svg"
                         className="h-14 w-14"

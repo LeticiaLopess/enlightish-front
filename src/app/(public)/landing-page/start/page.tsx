@@ -29,6 +29,7 @@ export default function Start() {
                     </Button>
                 </section>
 
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                     src="/assets/introduction-girl.png"
                     alt="Welcome"

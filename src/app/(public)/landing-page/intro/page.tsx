@@ -29,6 +29,7 @@ export default function Intro() {
                         O futuro te espera — <strong>e ele fala inglês!</strong>
                     </p>
 
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         alt="Europe"
                         src="/assets/tourism-illustration.png"

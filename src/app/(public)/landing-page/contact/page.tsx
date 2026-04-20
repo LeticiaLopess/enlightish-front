@@ -89,6 +89,7 @@ export default function Contact() {
                         personalizado para suas necessidades.
                     </p> */}
 
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         alt="Ilustração de comunicação global"
                         src="/assets/city-illustration.png"

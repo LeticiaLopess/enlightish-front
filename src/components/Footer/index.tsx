@@ -8,6 +8,7 @@ export function Footer() {
 
                 <div className="flex flex-col gap-10 lg:flex-row items-center justify-between w-full lg:px-20">
                     <section>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src="/assets/logo.svg"
                             className="h-40"
