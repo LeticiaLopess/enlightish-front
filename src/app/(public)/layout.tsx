@@ -13,7 +13,27 @@ const poppins = Poppins({
     display: 'swap'
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.enlightish.com.br';
+const defaultSiteUrl = 'https://www.enlightish.com.br';
+
+function resolveSiteUrl(): string {
+    const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+
+    if (!rawSiteUrl) {
+        return defaultSiteUrl;
+    }
+
+    try {
+        return new URL(rawSiteUrl).origin;
+    } catch {
+        try {
+            return new URL(`https://${rawSiteUrl}`).origin;
+        } catch {
+            return defaultSiteUrl;
+        }
+    }
+}
+
+const siteUrl = resolveSiteUrl();
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
